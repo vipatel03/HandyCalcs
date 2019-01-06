@@ -1,8 +1,10 @@
+
+import {filter} from 'rxjs/operators';
 import { Component, OnInit, Renderer, ViewChild, ElementRef, Directive } from '@angular/core';
 import { ROUTES } from '../../../layouts/shared/sidebar/sidebar.component';
 import { Router, ActivatedRoute, NavigationEnd, NavigationStart } from '@angular/router';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs';
 
 const misc: any = {
     navbar_menu_visible: 0,
@@ -42,7 +44,7 @@ export class NavbarComponent implements OnInit {
         if (body.classList.contains('sidebar-mini')) {
             misc.sidebar_mini_active = true;
         }
-        this._router = this.router.events.filter(event => event instanceof NavigationEnd).subscribe((event: NavigationEnd) => {
+        this._router = this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe((event: NavigationEnd) => {
             const $layer = document.getElementsByClassName('close-layer')[0];
             if ($layer) {
                 $layer.remove();
