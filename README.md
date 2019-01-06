@@ -1,7 +1,7 @@
 # [Quikcalcs](https://quikcalcs.com)
 
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open]
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
 ![Product Gif](https://media.giphy.com/media/5WJf1Jp5C0Ve1I2nne/giphy.gif)
 
@@ -10,13 +10,6 @@ One stop shop for all your calculator needs.
 ## Demo
 
 - [Home](https://quikcalcs.com)
-
-
-## Quick start
-
-Quick start options:
-
-- Buy from [Creative Tim](https://www.creative-tim.com/product/paper-dashboard-pro-angular)
 
 ## File Structure
 
