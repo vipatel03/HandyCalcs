@@ -81,7 +81,6 @@ quikcalcs/
 
 At present, we officially aim to support the last two versions of the following browsers:
 
-![Alt text](src/assets/img/chrome.png?raw=true "Chrome")
 <img src="https://github.com/vipatel03/QuikCalcs/blob/master/src/assets/img/chrome.png" width="64" height="64"> <img src="https://github.com/vipatel03/QuikCalcs/blob/master/src/assets/img/firefox.png" width="64" height="64"> <img src="https://github.com/vipatel03/QuikCalcs/blob/master/src/assets/img/edge.png" width="64" height="64"> <img src="https://github.com/vipatel03/QuikCalcs/blob/master/src/assets/img/safari.png" width="64" height="64"> <img src="https://github.com/vipatel03/QuikCalcs/blob/master/src/assets/img/opera.png" width="64" height="64">
 
 
