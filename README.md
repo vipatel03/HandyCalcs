@@ -91,7 +91,7 @@ If you have questions or need help please [contact us](https://www.quikcalcs.com
 ## Licensing
 
 - Copyright 2019 QuickCalcs (https://www.quikcalcs.com)
-- Creative Tim [license](https://www.quikcalcs.com/license)
+- QuikCalcs [license](https://www.quikcalcs.com/license)
 
 ##### Social Media
 
