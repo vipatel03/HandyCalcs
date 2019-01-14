@@ -1,17 +1,19 @@
 import { Routes } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin/admin-layout.component';
-
 export const AppRoutes: Routes = [
     {
-        path: '', redirectTo: 'home', pathMatch: 'full',
+        path: '', component: AdminLayoutComponent,
+        children: [
+            {
+                path: '', loadChildren: './home/home.module#HomeModule'
+            },
+            {
+                path: 'medicalhome', loadChildren: './medicalhome/medicalhome.module#MedicalHomeModule'
+            }
+        ]
     },
     {
-        path: '', component: AdminLayoutComponent,
-        children: [{
-            path: '',
-            loadChildren: './home/home.module#HomeModule'
-        },
-       ]
-    }
+        path: '', redirectTo: '', pathMatch: 'full',
+    },
 ];

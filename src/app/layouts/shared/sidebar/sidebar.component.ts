@@ -19,7 +19,7 @@ export interface ChildrenItems {
 
 // Menu Items
 export const ROUTES: RouteInfo[] = [{
-    path: '/home',
+    path: '/',
     title: 'Home',
     type: 'link',
     icontype: 'nc-icon nc-bank'
@@ -38,11 +38,12 @@ export const ROUTES: RouteInfo[] = [{
         // { path: 'typography', title: 'Typography', ab: 'T' }
     ]
 }, {
-    path: '/medical',
+    path: '/medicalhome',
     title: 'Medical',
     type: 'sub',
     icontype: 'nc-icon nc-ruler-pencil',
     children: [
+        { path: '/medicalhome/ibw', title: 'IBW', ab: 'IBW' },
         { path: '/', title: 'COMING SOON', ab: 'CS' },
         // { path: 'extended', title: 'Extended Forms', ab: 'EF' },
         // { path: 'validation', title: 'Validation Forms', ab: 'VF' },
@@ -51,6 +52,13 @@ export const ROUTES: RouteInfo[] = [{
 }, {
     path: '/comingsoon',
     title: 'COMING SOON',
+    type: 'link',
+    icontype: 'nc-icon nc-box'
+
+},
+ {
+    path: '/medicalhome/ibw',
+    title: 'IBW CALC',
     type: 'link',
     icontype: 'nc-icon nc-box'
 
